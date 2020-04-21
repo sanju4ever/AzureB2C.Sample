@@ -73,10 +73,7 @@ namespace AzureB2C.Sample
                 ClientId = clientId,
                 RedirectUri = redirectUri,
                 PostLogoutRedirectUri = redirectUri,
-                Notifications = new OpenIdConnectAuthenticationNotifications
-                {
-                    AuthenticationFailed = AuthenticationFailed
-                },
+                Notifications = new OpenIdConnectAuthenticationNotifications(),
                 Scope = "openid",
                 ResponseType = "id_token",
 
